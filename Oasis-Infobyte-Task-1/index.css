@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(56, 50, 50, 0.2)), url(https://wallpaperaccess.com/full/6163655.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image {
+    height: 10vh;
+    position: fixed;
+    left: 3vw;
+    top: 3vh;
+}
+
+@media screen and (max-width:1030px) {
+    .image{
+        height: 7vh;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .image{
+        height: 4vh;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .image{
+        height: 3vh;
+        top: 5vh;
+        font-weight: bolder;
+    }
+}
+
+.head a {
+    text-decoration: none;
+    font-size: 22px;
+    display: inline-block;
+    padding: 0px 1.5vw;
+    color: white;
+    list-style: none;
+    position: relative;
+    padding: 10px 20px;
+    transition: 0.3s linear;
+}
+
+@media screen and (max-width:585px) {
+    .head a{
+        padding: 0px 1vw;
+    }
+}
+
+.head a li{
+    font-size: 2vw;
+}
+
+.head a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid #fc7e02;
+    transition: 0.4s linear;
+}
+
+.head a:hover::before {
+    width: 100%;
+}
+
+.head a:hover {
+    position: relative;
+    color: #fc7e02;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1vw;
+    background-color: #fc7e02;
+    border-radius: 15px;
+    position: fixed;
+    top: 5vh;
+    right: 3vw;
+    transition: 0.4s linear;
+}
+
+.button a:hover {
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.section {
+    position: absolute;
+    max-width: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(56, 50, 50, 0.2)), url(bgmin.jpg);
+    background-size: cover;
+    opacity: 90;
+}
+
+span {
+    letter-spacing: 5px;
+    font-size: 1.7vw;
+    font-weight: bolder;
+    top: 30px;
+    position: relative;
+}
+
+h1 {
+    font-size: 4.5vw;
+    position: relative;
+    top: 45px;
+    opacity: 80%;
+}
+
+section a {
+    font-size: 1.2vw;
+    text-decoration: none;
+    background-color: #fc7e02;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border-radius: 15px;
+    position: relative;
+    top: 90px;
+}
+
+@media screen and (max-width:800px) {
+    section a{
+        font-size: 2vw;
+    }
+}
+
+.section a:hover {
+    background-color: transparent;
+    background-color: white;
+    color: #fc7e02;
+}
+
+.soon {
+    color: #fc7e02;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2.5vw;
+    font-family: initial;
+    font-weight: bolder;
+    right: 6vw;
+    bottom: 2vh;
+    position: fixed;
+    letter-spacing: 2px;
+    animation: size infinite 1s;
+}
+
+@media screen and (max-width:1279px) {
+    .soon{
+        color: white;
+        background-color:black;
+        opacity: 80%;
+    }
+}
+
+.dot {
+    font-size: 3vw;
+    letter-spacing: 10px;
+    top: -1.1vh;
+}
+
+.dot:before {
+    content: '.';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    animation: width 3s infinite linear;
+}
+
+@keyframes width {
+    0% {
+        content: '.';
+    }
+
+    25% {
+        content: '..';
+    }
+
+    50% {
+        content: '...';
+    }
+
+    75% {
+        content: '....';
+    }
+
+    100% {
+        content: '';
+    }
+}
+
+.main {
+    top: 72.3vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+    background-color: rgb(13, 13, 13);
+    opacity: 80%;
+
+}
+
+.first:hover,
+.second:hover,
+.third:hover {
+    background-color:white;
+}
+
+.fourth:hover{
+    background-color:#fc7e02;
+}
